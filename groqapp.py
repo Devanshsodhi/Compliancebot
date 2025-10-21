@@ -7,11 +7,14 @@ from core.document_processor import DocumentProcessor
 from config.config import GROQ_API_URL, MODEL_NAME
 import time
 
+st.set_page_config(page_title="AI Compliance Bot (Groq)", layout="wide", initial_sidebar_state="expanded")
+
 # -------------------------------
 # GROQ API Key from Streamlit Secrets
 # -------------------------------
 try:
     GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
+    st.write(st.secrets)
 except KeyError:
     st.error("❌ GROQ_API_KEY not found in Streamlit secrets. Add it and redeploy.")
     st.stop()
@@ -19,11 +22,6 @@ except KeyError:
 # -------------------------------
 # Streamlit Page Setup
 # -------------------------------
-st.set_page_config(
-    page_title="AI Compliance Bot (Groq)", 
-    layout="wide", 
-    initial_sidebar_state="expanded"
-)
 
 # Custom CSS
 st.markdown("""

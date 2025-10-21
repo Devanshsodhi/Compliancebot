@@ -11,7 +11,6 @@ import time
 # -------------------------------
 # Streamlit Page Setup
 # -------------------------------
-print("Using GROQ API Key:", bool(os.environ.get("GROQ_API_KEY")))
 st.set_page_config(page_title="AI Compliance Bot (Groq)", layout="wide", initial_sidebar_state="expanded")
 
 # Custom CSS

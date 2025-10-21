@@ -1,37 +1,29 @@
-# AI Compliance Bot Dependencies
-# Core LLM and AI frameworks
+# Streamlit and UI
+streamlit==1.28.0
+rich==14.2.0
+markdown-it-py==4.0.0
+mdurl==0.1.2
+pygments==2.19.2
+
+# Groq / LLM interaction
+requests==2.32.0
 langchain==0.1.0
 langchain-community==0.0.10
-ollama==0.1.6
 
-# Document parsing and OCR
+# Document processing
 docling==1.0.0
 docling-core>=1.1.0,<2.0.0
+pydantic>=2.6.0,<3.0.0
 pypdf2==3.0.1
 pdfplumber==0.10.3
 pytesseract==0.3.10
 
-# Vector store and embeddings
+# Vector database
 chromadb==0.4.22
+faiss-cpu==1.12.0
+
+# Embeddings
 sentence-transformers==2.2.2
-faiss-cpu
 
-# Data processing
+# Data handling
 pandas==2.1.4
-numpy==1.26.2
-python-dotenv==1.0.0
-
-# CLI and interaction
-rich==13.7.0
-prompt-toolkit==3.0.43
-colorama==0.4.6
-streamlit==1.29.0
-
-# Utilities
-pydantic==2.5.3
-python-dateutil==2.8.2
-jsonschema==4.20.0
-
-# Synthetic data generation (placeholder)
-# faker==22.0.0
-# Pillow==10.1.0

@@ -1,0 +1,81 @@
+
+COMPLIANCE RULES FOR BUSINESS DOCUMENTS
+
+=== INVOICE COMPLIANCE RULES ===
+
+Rule 1: Valid Invoice Number
+- Every invoice must have a unique invoice number/ID
+- Format should be alphanumeric (e.g., INV-001, INV-2024-001)
+- Must not be blank or "N/A"
+
+Rule 2: Date Requirements
+- Invoice date must be present and valid
+- Invoice date should not be in the future
+- Due date (if present) must be after invoice date
+
+Rule 3: Financial Information
+- Total amount must be present and greater than zero
+- If tax is shown, verify: subtotal + tax = total (within rounding tolerance)
+- Currency should be clearly indicated
+
+Rule 4: Party Information
+- Vendor/supplier name must be present
+- Customer/buyer information should be present
+- Contact information recommended
+
+Rule 5: Payment Terms
+- Payment terms should be clearly stated (e.g., "Net 30", "Due on receipt")
+- Due date should align with payment terms
+
+Rule 6: Line Items
+- If line items present, each should have description and price
+- Quantities should be positive numbers
+- Line item totals should sum to subtotal
+
+=== PURCHASE ORDER COMPLIANCE RULES ===
+
+Rule 7: PO Number
+- Must have unique PO number
+- Should follow company format standards
+
+Rule 8: Delivery Information
+- Delivery date should be specified
+- Delivery date should be reasonable (not in past, not too far future)
+- Shipping address should be complete
+
+Rule 9: Authorization
+- PO should indicate authorized approver (if field exists)
+- Amount should be within approval limits
+
+=== GRN COMPLIANCE RULES ===
+
+Rule 10: Receipt Documentation
+- GRN must have unique receipt number
+- Receipt date must be present
+- Received by person should be identified
+
+Rule 11: PO Matching
+- GRN should reference corresponding PO number
+- Quantities received should match PO quantities (or have variance explanation)
+
+Rule 12: Quality Check
+- Quality inspection status should be documented
+- Any damages or discrepancies should be noted
+
+=== GENERAL RULES ===
+
+Rule 13: Data Completeness
+- Critical fields should not be missing or empty
+- Document should be machine-readable
+
+Rule 14: Consistency
+- Dates should be logically consistent
+- Amounts should be mathematically correct
+- References between documents should be valid
+
+Rule 15: Compliance Threshold
+- Documents with 2+ FAIL status are non-compliant
+- Documents with 3+ WARNING status require review
+- All CRITICAL rules must PASS
+
+END OF RULES

@@ -11,9 +11,8 @@ import time
 # -------------------------------
 # Streamlit Page Setup
 # -------------------------------
-st.write(st.secrets)
-
 st.set_page_config(page_title="AI Compliance Bot (Groq)", layout="wide", initial_sidebar_state="expanded")
+st.write(st.secrets)
 
 # Custom CSS
 st.markdown("""

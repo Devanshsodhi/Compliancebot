@@ -4,7 +4,6 @@ import os
 from pathlib import Path
 from typing import Dict, Any
 
-GROQ_API_KEY = "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"
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
 MODEL_NAME = "llama-3.1-8b-instant"
 

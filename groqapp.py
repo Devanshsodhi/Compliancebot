@@ -4,8 +4,8 @@ import json
 from pathlib import Path
 from core.vector_store import DocumentVectorStore
 from core.document_processor import DocumentProcessor
-from config.config import GROQ_API_KEY, GROQ_API_URL, MODEL_NAME
-
+from config.config import GROQ_API_URL, MODEL_NAME
+GROQ_API_KEY = st.secrets["GROQ_API_KEY"]  
 import time
 
 # -------------------------------
